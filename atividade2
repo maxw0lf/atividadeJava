@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class problema2 {
+	public static void main(String[] args)
+	{
+		int cont = 10;
+		Scanner leitor = new Scanner(System.in);
+		
+		while(cont>0)
+		{
+			System.out.println("informe um numero");
+			if(leitor.nextInt()%2==0) {
+				System.out.println("par");
+			}
+			else
+			{
+				System.out.println("impar");
+			}
+			cont--;
+		}
+	}
+	
+	
+	
+}
