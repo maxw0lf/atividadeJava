@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class atividade4 {
+	public static void main(String[] args)
+	{
+		Scanner leitor = new Scanner(System.in);
+		Boolean x = true;
+		while(x = true) {
+			System.out.println("digite seu salario:");
+			float salario = leitor.nextFloat();
+			double aumento = (salario * 0.20) + salario;
+			if(salario > 500)
+			{
+				System.out.println("voce nao tem direito a aumento");
+				System.out.println("voce deseja continuar? 1-S/2-N: ");
+				int cont = leitor.nextInt();
+				if(cont == 2)
+				{
+					break;
+				}
+				else
+				{
+					continue;
+				}
+			}
+			else
+			{
+				System.out.println("voce tem direito ao aumento,seu novo salario sera:" + aumento);
+				System.out.println("voce deseja coninuar? 1-S/2-N");
+				int cont = leitor.nextInt();
+				if(cont == 2)
+				{
+					break;
+				}
+				else
+				{
+					continue;
+				}
+			}
+			
+
+		
+	}
+	
+
+}
+}
