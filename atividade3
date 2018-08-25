@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class problema3 {
+	public static void main(String[] args)
+	{
+		Scanner leitor = new Scanner(System.in);
+		System.out.println("digite o numero que voce deseja a tabuada: ");
+		int num = leitor.nextInt();
+		for (int x = 1; x <= 10 ; x++)
+		{
+			int total = num * x;
+			System.out.println("para " + x + "o numero sera " + total);
+		}
+	}
+
+}
