@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class problema1 {
+	public static void main(String[] args)
+	{
+		Scanner leitor = new Scanner(System.in);
+		System.out.println("escreva seu salario:" );
+		float salari = leitor.nextFloat();
+		System.out.println("digite o aumento em porcentagem:");
+		float aumen = leitor.nextFloat();
+		float total = salari + (aumen % salari);
+		System.out.println("o seu salario aumentou por:" + aumen);
+		System.out.println("e seu salario agora é " + total);
+			
+		
+		
+	}
+
+}
