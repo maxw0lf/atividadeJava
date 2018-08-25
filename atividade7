@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class atividade7 {
+	public static void main(String[] args)
+	{
+		Scanner leitor  = new Scanner(System.in);
+		int aprovados = 0;
+		int exame = 0;
+		int reprovado = 0;
+		float medTotal = 0;
+		for(int x = 1; x <=6 ; x++)
+		{
+			System.out.println("digite a primeira nota: ");
+			float not1 = leitor.nextFloat();
+			System.out.println("digite a segunda nota");
+			float not2 = leitor.nextFloat();
+			float media = (not1 + not2) / 2;
+			System.out.println("sua media foi: "+ media);
+			medTotal = medTotal + media;
+			
+			if(media >= 7)
+			{
+				System.out.println("aprovado");
+				aprovados++;
+			
+			}
+			if(media < 7 && media >= 3)
+			{
+				System.out.println("exame");
+				exame++;
+			}
+			if(media < 3) {
+				System.out.println("reprovado");
+				reprovado++;
+			}
+			
+			
+		}
+		medTotal = medTotal/6;
+		System.out.println("o numero de aprovados foi:" + aprovados);
+		System.out.println("o numero de exames foi :" + exame);
+		System.out.println("o numero de reprovados foi: " + reprovado);
+		System.out.println("a media da turma foi:" + medTotal);
+		
+	}
+
+}
