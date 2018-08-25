@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class atividade8 {
+	public static void main(String[] args)
+	{
+		Scanner leitor  = new Scanner(System.in);
+
+		int opcao = 0;
+		
+		while(true)
+		{
+			System.out.println("digite o nome do cliente: ");
+			String nome = leitor.nextLine();
+			System.out.println("digite o numero de dias:");
+			int dias = leitor.nextInt();
+			float diaria = dias * 40;
+			if(dias < 10)
+			{
+				float total = diaria + 15;
+				System.out.println("o total da diaria de " + nome + " foi de: " + total);
+			}
+			else
+			{
+				float total = diaria + 8;
+				System.out.println("o total da diaria de " + nome + " foi de: " + total);
+			}
+			
+			
+		}
+	}
+	}
+
+
